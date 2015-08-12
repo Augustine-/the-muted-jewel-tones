@@ -1,4 +1,4 @@
-(function(){
+$(document).ready((function(){
   setInterval(function(){
     var colors = [
     '#D2100B', 
@@ -12,8 +12,17 @@
     '#6F47B3',
     '#880788'
     ];
-  }, 6000);
-});
+    shuffle(colors);
 
-// we're going to assign each color to a stripe, one at a time 
-// every six seconds or so
+    for (var i = colors.length - 1; i >= 0; i--) {
+      $('#' + i).css('background-color', colors[i]);
+    };
+  }, 3000);
+
+
+  // shuffle an array
+  function shuffle(o){
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+}
+}));
