@@ -1,6 +1,7 @@
 <?php 
 
-require 'PHPMailerAutoload.php';
+require '/vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
+
 $mail = new PHPMailer;
 
 $mail->From     = $_POST['email'];
