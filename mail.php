@@ -1,13 +1,21 @@
 <?php 
 
-$name        = $_POST['name'];
-$email       = $_POST['email'];
-$message     = $_POST['message'];
-$formcontent = "From: $name \n Message: $message";
-$recipient   = "augustine.wittkower@gmail.com";
-$subject     = "Contact Form";
-$mailheader  = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die(print_r(error_get_last()));
-echo "Thank You!";
+require 'PHPMailerAutoload.php';
+$mail = new PHPMailer;
+
+$mail->From     = $_POST['email'];
+$mail->FromName = $_POST['name'];
+$mail->addAddress('augustine.wittkower@gmail.com', ' The Muted Jewel Tones');     // Add a recipient
+$mail->addReplyTo('info@example.com', 'Information');
+$mail->Subject = 'Contact Form Message';
+$mail->Body    = $_POST['message'];
+
+if(!$mail->send()) {
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
+} else {
+    echo 'Message has been sent';
+}
 
 ?>
+
