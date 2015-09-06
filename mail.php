@@ -8,8 +8,8 @@ $mail->IsSMTP();
 $mail->CharSet = 'UTF-8';
 
 $mail->SMTPDebug = 2;
-$mail->SMTPSecure = 'tls';
-$mail->Host       = "smtp.gmail.com"; // SMTP server example
+$mail->SMTPSecure = 'ssl';
+$mail->Host       = "ssl://smtp.gmail.com"; // SMTP server example
 $mail->SMTPAuth   = true;                  // enable SMTP authentication
 $mail->Port       = 465;                    // set the SMTP port for the GMAIL server
 $mail->Username   = "mutedjeweltonessmtp@gmail.com"; // SMTP account username example
