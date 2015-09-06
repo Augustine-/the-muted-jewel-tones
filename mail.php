@@ -7,7 +7,7 @@ $mail = new PHPMailer;
 $mail->IsSMTP();
 $mail->CharSet = 'UTF-8';
 
-$mail->Host       = "smtp.gmail.com"; // SMTP server example
+$mail->Host       = "ssl://smtp.gmail.com"; // SMTP server example
 $mail->SMTPAuth   = true;                  // enable SMTP authentication
 $mail->Port       = 465;                    // set the SMTP port for the GMAIL server
 $mail->Username   = "mutedjeweltones@gmail.com"; // SMTP account username example
