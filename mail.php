@@ -1,12 +1,14 @@
 <?php 
 
-require_once(__DIR__.'/vendor/phpmailer/PHPMailerAutoload.php');
+require (__DIR__.'/vendor/phpmailer/PHPMailerAutoload.php');
 
 $mail = new PHPMailer;
 
 $mail->IsSMTP();
 $mail->CharSet = 'UTF-8';
 
+$mail->SMTPDebug = 2;
+$mail->SMTPSecure = 'ssl';
 $mail->Host       = "ssl://smtp.gmail.com"; // SMTP server example
 $mail->SMTPAuth   = true;                  // enable SMTP authentication
 $mail->Port       = 465;                    // set the SMTP port for the GMAIL server
