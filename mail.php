@@ -7,7 +7,7 @@ $mail = new PHPMailer;
 $mail->IsSMTP();
 $mail->CharSet = 'UTF-8';
 
-$mail->SMTPDebug = 0;
+$mail->SMTPDebug = 2;
 $mail->SMTPSecure = 'ssl';
 $mail->Host       = "ssl://smtp.gmail.com"; // SMTP server example
 $mail->SMTPAuth   = true;                  // enable SMTP authentication
@@ -18,7 +18,7 @@ $mail->Password   = "twomangentleman";        // SMTP account password example
 $mail->From     = $_POST['email'];
 $mail->FromName = $_POST['name'];
 $mail->addAddress('augustine.wittkower@gmail.com', ' The Muted Jewel Tones');     // Add a recipient
-$mail->addReplyTo('info@example.com', 'Information');
+$mail->addReplyTo('mutedjeweltones@gmail.com', 'The Muted Jewel Tones');
 $mail->Subject = 'Contact Form Message';
 $mail->Body    = $_POST['message'];
 
