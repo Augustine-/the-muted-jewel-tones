@@ -7,7 +7,9 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'EasyPeasyICS' => $vendorDir . '/phpmailer/phpmailer/extras/EasyPeasyICS.php',
+    'OAuth' => $vendorDir . '/phpmailer/phpmailer/class.oauth.php',
     'PHPMailer' => $vendorDir . '/phpmailer/phpmailer/class.phpmailer.php',
+    'PHPMailerOAuth' => $vendorDir . '/phpmailer/phpmailer/class.phpmaileroauth.php',
     'POP3' => $vendorDir . '/phpmailer/phpmailer/class.pop3.php',
     'SMTP' => $vendorDir . '/phpmailer/phpmailer/class.smtp.php',
     'ntlm_sasl_client_class' => $vendorDir . '/phpmailer/phpmailer/extras/ntlm_sasl_client.php',
