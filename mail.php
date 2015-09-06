@@ -1,6 +1,6 @@
 <?php 
 
-require '/vendor/phpmailer/PHPMailerAutoload.php';
+require_once(__DIR__.'/vendor/phpmailer/PHPMailerAutoload.php');
 
 $mail = new PHPMailer;
 
