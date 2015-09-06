@@ -7,12 +7,12 @@ $mail = new PHPMailer;
 $mail->IsSMTP();
 $mail->CharSet = 'UTF-8';
 
-$mail->SMTPDebug = 2;
+$mail->SMTPDebug = 0;
 $mail->SMTPSecure = 'ssl';
 $mail->Host       = "ssl://smtp.gmail.com"; // SMTP server example
 $mail->SMTPAuth   = true;                  // enable SMTP authentication
 $mail->Port       = 465;                    // set the SMTP port for the GMAIL server
-$mail->Username   = "mutedjeweltones@gmail.com"; // SMTP account username example
+$mail->Username   = "mutedjeweltonessmtp@gmail.com"; // SMTP account username example
 $mail->Password   = "twomangentleman";        // SMTP account password example
 
 $mail->From     = $_POST['email'];
