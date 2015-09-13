@@ -1,11 +1,12 @@
 $(document).ready((function(){
+  // Cycle through colors from an array
   setInterval(function(){
     var colors = [
     '#D2100B', 
     '#F5892d', 
     '#F5AE2D', 
     '#BEC400', 
-    '#86C40A',
+    '#81BD09',
     '#078F58',
     '#077A7F',
     '#4353B7',
@@ -19,17 +20,24 @@ $(document).ready((function(){
     };
   }, 3000);
 
-
   // shuffle an array
   function shuffle(o){
     for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
     return o;
   }
 
+  $('nav a').on('click', function(){
+    // animate stripes in
+    // hide sections, reveal correct section
+    var sectionClass = this.className.replace(' ', '-');
+    $('section').hide();
+    $('.' + sectionClass).show();
+
+  });
 
 }));
 
-
+// move different stripes at different speeds
 $.fn.moveIt = function(){
   var $els = $(this);
   var $window = $(window);
