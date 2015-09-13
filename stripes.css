@@ -1,0 +1,163 @@
+/*
+2.0
+*/
+body {
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px;
+ height: 100%;
+}
+
+html{
+  height: 100%;
+}
+
+main {
+  height: 100vh;
+}
+
+.stripe{
+  width: 11vw;
+  height: 100vh; 
+  position: absolute;
+  margin-left: -3;
+  margin-right: -3;
+  margin-bottom: -4;
+  transition: background 4s;
+}
+
+main .stripe:nth-of-type(2){
+  left: 11vw;
+}
+
+main .stripe:nth-of-type(3){
+  left: 22vw;
+}
+
+main .stripe:nth-of-type(4){
+  left: 33vw;
+}
+
+main .stripe:nth-of-type(5){
+  left: 44vw;
+}
+
+main .stripe:nth-of-type(6){
+  left: 55vw;
+}
+
+main .stripe:nth-of-type(7){
+  left: 66vw;
+}
+
+main .stripe:nth-of-type(8){
+  left: 77vw;
+}
+
+main .stripe:nth-of-type(9){
+  left: 88vw;
+}
+
+nav{
+  position: absolute;
+  z-index: 1;
+  top: 80vh;
+  left: 28vw;
+  width: 43vw;
+  height: 20vh;
+}
+
+nav a{
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover{
+  color: black;
+}
+
+nav .the{
+  font-size: 2vw;
+}
+
+nav .shows{
+  margin-right: 3vw;
+}
+
+nav .band{
+  margin-right: 3.5vw;
+  margin-left: 3.5vw;
+}
+
+nav .music{
+  margin-left: 3vw;
+}
+
+nav .banner{  
+  font-size: 3vw;
+  color: white;
+  letter-spacing: 0.3vw;
+}
+
+
+.red{
+  background-color: #8C0A06;
+}
+
+.orange{
+  background-color: #F5892d;
+}
+
+.gold{
+  background-color: #F5AE2D;
+}
+
+.yellow{
+  background-color: #C3C900;
+}
+
+.lime{
+  background-color: #81BD09;
+}
+
+.lilypad{
+  background-color: #078F58;
+}
+
+.sky{
+  background-color: #077A7F;
+}
+
+.ocean{
+  background-color: #4353B7;
+}
+
+.royalty{
+  background-color: #6F47B3;
+}
+
+.fabulous{
+  background-color: #880788;
+}
+
+section{
+  display: none;
+  height: 100vh;
+  width: 100vw;
+}
+
+.banner{
+  display: initial;
+}
+.the-shows{
+
+}
+.the-band{
+
+}
+.the-music{
+
+}
+
