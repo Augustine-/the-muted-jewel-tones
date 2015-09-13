@@ -1,3 +1,6 @@
+/*
+2.0
+*/
 body {
  margin-top: 0px;
  margin-right: 0px;
@@ -10,20 +13,12 @@ html{
   height: 100%;
 }
 
-.content {
-  height: 12000px;
-  z-index: 1;
-}
-
-.buffer{
-  position: absolute;
-  height: 70vh;
-  width: 100vw;
-  background-color: #77154C;
+main {
+  height: 100vh;
 }
 
 .stripe{
-  width: 10vw;
+  width: 11vw;
   height: 100vh; 
   position: absolute;
   margin-left: -3;
@@ -32,67 +27,85 @@ html{
   transition: background 4s;
 }
 
-.wrapper{
-  position: fixed;
-  z-index: 3;
+main .stripe:nth-of-type(2){
+  left: 11vw;
 }
 
-.wrapper .stripe:nth-of-type(2){
-  left: 10vw;
+main .stripe:nth-of-type(3){
+  left: 22vw;
 }
 
-.wrapper .stripe:nth-of-type(3){
-  left: 20vw;
+main .stripe:nth-of-type(4){
+  left: 33vw;
 }
 
-.wrapper .stripe:nth-of-type(4){
-  left: 30vw;
+main .stripe:nth-of-type(5){
+  left: 44vw;
 }
 
-.wrapper .stripe:nth-of-type(5){
-  left: 40vw;
+main .stripe:nth-of-type(6){
+  left: 55vw;
 }
 
-.wrapper .stripe:nth-of-type(6){
-  left: 50vw;
+main .stripe:nth-of-type(7){
+  left: 66vw;
 }
 
-.wrapper .stripe:nth-of-type(7){
-  left: 60vw;
+main .stripe:nth-of-type(8){
+  left: 77vw;
 }
 
-.wrapper .stripe:nth-of-type(8){
-  left: 70vw;
+main .stripe:nth-of-type(9){
+  left: 88vw;
 }
 
-.wrapper .stripe:nth-of-type(9){
-  left: 80vw;
-}
-
-.wrapper .stripe:nth-of-type(10){
-  left: 90vw;
-}
-
-.nav{
+nav{
   position: absolute;
+  z-index: 1;
+  top: 85vh;
+  left: 28vw;
+  width: 43vw;
+  height: 20vh;
+}
+
+nav a{
   font-family: 'Open Sans', sans-serif;
-  color: white;
-  top: 15%;
-  font-size: 24px;
-}
-
-.nav-item{
-  padding-left: 10px;
-}
-
-.nav-item a{
   text-decoration: none;
   color: white;
 }
 
-.nav-item a:hover{
+nav a:hover{
   color: black;
 }
+
+nav .the{
+  
+  font-size: 2vw;
+}
+nav .shows{
+  margin-right: 3vw;
+}
+
+nav .band{
+  margin-right: 3.5vw;
+  margin-left: 3.5vw;
+}
+
+nav .music{
+  margin-left: 3vw;
+}
+
+nav .banner{
+  display: inherit;    
+  font-size: 3vw;
+  color: white;
+  letter-spacing: 0.3vw;
+}
+
+nav .top{
+
+}
+
 
 .red{
   background-color: #D2100B;
@@ -107,7 +120,7 @@ html{
 }
 
 .yellow{
-  background-color: #FFDF55;
+  background-color: #BEC400;
 }
 
 .lime{
@@ -134,66 +147,4 @@ html{
   background-color: #880788;
 }
 
-.banner{    
-  position: relative;
-  z-index: 4;
-  top: 75vh;
-  left: 11vw;
-  width: 78vw;
-  font-size: 77px;
-  color: white;
-}
 
-.bio{
-  height: 100vh;
-  width: 100vw;
-  top: 70vh;
-  z-index: 2;
-  position: absolute;
-  background-color: #77154C;
-}
-
-.bio .panel {
-  margin-top: 5%;
-  margin-left: 7%;
-  z-index: 2;
-  height: 40vh;
-  width: 23%;
-  border: 1px solid white;
-  display: inline-block;
-  text-align: center;
-}   
-
-.bio .raena{
-
-}
-
-.bio .rose{
-
-}
-
-.bio .cassandra{
-
-}
-
-.page {
-  height: 100vh;
-  width: 100vw;
-  z-index: 2;
-  position: absolute;
-}
-
-.shows {
-    top: 170vh;
-    background-color: #822929;
-}
-
-.music {
-    top: 270vh;
-    background-color: #3D1577;
-}
-
-.contact {
-    top: 370vh;
-    background-color: #152E77;
-}

@@ -4,7 +4,7 @@ $(document).ready((function(){
     '#D2100B', 
     '#F5892d', 
     '#F5AE2D', 
-    '#FFDF55', 
+    '#BEC400', 
     '#86C40A',
     '#078F58',
     '#077A7F',
