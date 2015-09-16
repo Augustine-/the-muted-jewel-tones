@@ -32,7 +32,6 @@ $(document).ready((function(){
     var sectionClass = this.className.replace(' ', '-');
     $('section').hide();
     $('.' + sectionClass).show();
-
   });
 
 }));

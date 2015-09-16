@@ -151,6 +151,12 @@ section{
 .banner{
   display: initial;
 }
+
+.animate-up{
+  top: -50vh;
+  -webkit-transition: top 4s;
+}
+
 .the-shows{
 
 }
