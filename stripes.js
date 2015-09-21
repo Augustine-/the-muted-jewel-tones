@@ -27,35 +27,51 @@ $(document).ready((function(){
   }
 
   $('nav a').on('click', function(){
-    // animate stripes in
-    // hide sections, reveal correct section
-    var sectionClass = this.className.replace(' ', '-');
-    $('section').hide();
-    $('.' + sectionClass).show();
+    var section = this.className;
+    var stripesAreUp = $('.move').length;
+    if (stripesAreUp > 0) {
+        moveStripesDown();
+        $(".stripe").one('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', 
+          function() {
+            moveStripesUp(section);
+          }
+        );
+    } else {
+      moveStripesUp(section);
+    }
+
+  });
+
+  function moveStripesUp(section){
+    $('#' + section).show();
+    $('.stripe').addClass('move');
+  };
+
+  function moveStripesDown(){
+    $('.stripe').removeClass('move');
+    $(".stripe").one('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', 
+        function() {
+          $('.subsection').hide();
+        }
+      );
+  };
+
+  $('.banner').on('click', function(){
+    $('.stripe').removeClass('move');
   });
 
 }));
 
-// move different stripes at different speeds
-$.fn.moveIt = function(){
-  var $els = $(this);
-  var $window = $(window);
-  var scrollPos = $window.scrollTop();
-  
-  $window.on('scroll', function(){
-    scrollPos = $window.scrollTop();
-    $els.each(moveEl);
-  });
-  
-  function moveEl(){
-    var $this = $(this);
-    var scrollSpeed = $this.data('scroll-speed');
-    var elPos = scrollPos / scrollSpeed;
 
-    $this.css('transform', 'translateY(-' + elPos + 'px)');
-  }
-}
 
-$(function(){
-  $('[data-scroll-speed]').moveIt();
-});
+/*
+1. move stripes down
+2. hide old sections
+3. reveal correct section
+4. move stripes up
+
+1. are stripes already down? if not, move them down
+2. hide all subsections
+3. reveal section as clicked on
+4. move stripes up
+*/
