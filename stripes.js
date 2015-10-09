@@ -1,4 +1,6 @@
 $(document).ready((function(){
+
+
   // Cycle through colors from an array
   setInterval(function(){
     var colors = [
@@ -26,42 +28,43 @@ $(document).ready((function(){
     return o;
   }
 
-  $('nav a').on('click', function(){
-    var section = this.className;
+  $('.nav-link').on('click', function(){
+    var section = this.id;
     var stripesAreUp = $('.move').length;
+    $('.nav-link').css('pointer-events', 'none');
     if (stripesAreUp > 0) {
-        moveStripesDown();
-        $(".stripe").one('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', 
-          function() {
-            moveStripesUp(section);
-          }
-        );
+      moveStripesDown("and then back up again", section);
     } else {
       moveStripesUp(section);
     }
-
   });
 
   function moveStripesUp(section){
-    $('#' + section).show();
+    console.log('stripes up');
+    $('.' + section).show();
     $('.stripe').addClass('move');
+    setTimeout(function(){
+      $('.nav-link').css('pointer-events', 'initial');
+    }, 2000);
   };
 
-  function moveStripesDown(){
+  function moveStripesDown(next_action, section){
+    console.log('stripes down');
     $('.stripe').removeClass('move');
-    $(".stripe").one('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', 
-        function() {
-          $('.subsection').hide();
-        }
-      );
+    if(next_action == "and then back up again"){
+      setTimeout(function(){ 
+        $('.subsection').hide();
+        moveStripesUp(section);
+      }, 2000);
+    }
   };
+
 
   $('.banner').on('click', function(){
-    $('.stripe').removeClass('move');
+    moveStripesDown();
   });
 
 }));
-
 
 
 /*
