@@ -13,7 +13,7 @@ $(document).ready((function(){
     '#077A7F',
     '#4353B7',
     '#6F47B3',
-    '#880788'
+    '#AF1C08'
     ];
     shuffle(colors);
 

@@ -116,15 +116,15 @@ nav .banner{
 
 
 .red{
-  background-color: #8C0A06;
+  background-color: #AF1C08;
 }
 
 .darkred{
-
+  background-color: #880712;
 }
 
 .orange{
-  background-color: #F5892d;
+  background-color: #F5892D;
 }
 
 .gold{
@@ -141,6 +141,10 @@ nav .banner{
 
 .lilypad{
   background-color: #078F58;
+}
+
+.dank{
+  background-color: #187B54
 }
 
 .sky{
@@ -162,6 +166,8 @@ nav .banner{
 .fabulous{
   background-color: #880788;
 }
+
+
 
 section{
   display: none;
