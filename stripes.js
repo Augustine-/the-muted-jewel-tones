@@ -1,5 +1,5 @@
 $(document).ready((function(){
-
+  
 
   // Cycle through colors from an array
   setInterval(function(){
@@ -31,7 +31,6 @@ $(document).ready((function(){
   $('.nav-link').on('click', function(){
     var section = this.id;
     var stripesAreUp = $('.move').length;
-    $('.nav-link').css('pointer-events', 'none');
     if (stripesAreUp > 0) {
       moveStripesDown("and then back up again", section);
     } else {
@@ -39,29 +38,35 @@ $(document).ready((function(){
     }
   });
 
-  function moveStripesUp(section){
-    console.log('stripes up');
-    $('.' + section).show();
-    $('.stripe').addClass('move');
+  function animationDelay(){
+    $('.nav-link').css('pointer-events', 'none');
+    
     setTimeout(function(){
       $('.nav-link').css('pointer-events', 'initial');
-    }, 2000);
+    }, 1900);
+  };
+
+  function moveStripesUp(section){
+    $('.' + section).show();
+    $('.stripe').addClass('move');
+    animationDelay();
   };
 
   function moveStripesDown(next_action, section){
-    console.log('stripes down');
     $('.stripe').removeClass('move');
     if(next_action == "and then back up again"){
+      animationDelay();
       setTimeout(function(){ 
         $('.subsection').hide();
         moveStripesUp(section);
-      }, 2000);
+      }, 1900);
     }
   };
 
 
   $('.banner').on('click', function(){
     moveStripesDown();
+    animationDelay();
   });
 
 }));
