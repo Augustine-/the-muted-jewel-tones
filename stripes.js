@@ -1,6 +1,5 @@
 $(document).ready((function(){
   
-
   // Cycle through colors from an array
   setInterval(function(){
     var colors = [
@@ -40,7 +39,7 @@ $(document).ready((function(){
 
   function animationDelay(){
     $('.nav-link').css('pointer-events', 'none');
-    
+
     setTimeout(function(){
       $('.nav-link').css('pointer-events', 'initial');
     }, 1900);
@@ -62,7 +61,6 @@ $(document).ready((function(){
       }, 1900);
     }
   };
-
 
   $('.banner').on('click', function(){
     moveStripesDown();
