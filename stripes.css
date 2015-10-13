@@ -4,6 +4,7 @@ body {
  margin-bottom: 0px;
  margin-left: 0px;
  height: 100%;
+ font-family: 'Open Sans', sans-serif;  
 }
 
 html{
@@ -85,7 +86,6 @@ nav{
 }
 
 nav a{
-  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   color: white;
   font-size: 2vw;
@@ -115,6 +115,18 @@ nav .banner{
 }
 
 /*colors folded below*/
+.raena-color{
+  color: #d63580;
+}
+
+.sandy-color{
+  color: #f0a938;
+}
+
+.rose-color{
+  color: #16d378;
+}
+
 .red{
   background-color: #AF1C08;
 }
@@ -196,6 +208,9 @@ section.stripes-curtain{
   z-index: 3;
   border-radius: 10px; 
   background-color: #FFD4FC;
+  -webkit-box-shadow: 9px 15px 9px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 9px 15px 9px 3px rgba(0,0,0,0.75);
+  box-shadow: 9px 15px 9px 3px rgba(0,0,0,0.75);
 }
 
 .picture{
@@ -210,19 +225,27 @@ section.stripes-curtain{
   left: 4vw;
   top: 1vh;
   text-align: center;
+  font-size: 24px;
+  color: white;
 }
 
 .band-biography{
-  font-family: 'Open Sans', sans-serif;  height: 38%;
+  height: 30%;
   width: 79%;
   border: 1px solid white;
+  border-radius: 10px;
   left: 7vw;
   bottom: 5vh;
   position: absolute;
   padding: 1vw;
+  overflow: hidden;
 }
 
 .band-biography p{
   margin-top: 0px;
   text-indent: 2vw;
+}
+
+.name{
+  font-size: 26px;
 }
