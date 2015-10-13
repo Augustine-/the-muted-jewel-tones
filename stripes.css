@@ -232,13 +232,16 @@ section.stripes-curtain{
 .band-biography{
   height: 30%;
   width: 79%;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 10px;
   left: 7vw;
   bottom: 5vh;
   position: absolute;
   padding: 1vw;
   overflow: hidden;
+  -webkit-box-shadow: 9px 11px 9px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 9px 11px 9px -5px rgba(0,0,0,0.75);
+  box-shadow: 9px 11px 9px -5px rgba(0,0,0,0.75);
 }
 
 .band-biography p{
