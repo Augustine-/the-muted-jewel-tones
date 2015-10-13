@@ -177,7 +177,7 @@ section.active{
   display: initial;
 }
 
-section.banner{
+section.stripes-curtain{
   display: initial;
   position: absolute;
   z-index: 4;
