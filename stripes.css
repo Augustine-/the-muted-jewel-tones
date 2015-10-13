@@ -198,16 +198,26 @@ section.stripes-curtain{
 /*the band*/
 
 .the-band-body{
+  background-color: #FFD4FC;
+}
+
+.the-shows-body{
+  background-color: #FFD4DC;
+}
+
+.the-music-body{
+  background-color: #E1FFD4;
+}
+
+.subsection-container{
   width: 80vw;
   display: block;
   position: relative;
   height: 70vh;
   top: 5vh;
-  background-color: white;
   margin-left: 10vw;
   z-index: 3;
   border-radius: 10px; 
-  background-color: #FFD4FC;
   -webkit-box-shadow: 9px 15px 9px 3px rgba(0,0,0,0.75);
   -moz-box-shadow: 9px 15px 9px 3px rgba(0,0,0,0.75);
   box-shadow: 9px 15px 9px 3px rgba(0,0,0,0.75);
