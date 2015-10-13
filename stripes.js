@@ -68,16 +68,3 @@ $(document).ready((function(){
   });
 
 }));
-
-
-/*
-1. move stripes down
-2. hide old sections
-3. reveal correct section
-4. move stripes up
-
-1. are stripes already down? if not, move them down
-2. hide all subsections
-3. reveal section as clicked on
-4. move stripes up
-*/
