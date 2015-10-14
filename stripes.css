@@ -193,6 +193,7 @@ section.stripes-curtain{
   display: initial;
   position: absolute;
   z-index: 4;
+  pointer-events: none;
 }
 
 /*the band*/
@@ -261,4 +262,19 @@ section.stripes-curtain{
 
 .name{
   font-size: 26px;
+}
+
+/*the shows*/
+
+#mjt-player-iframe{
+  background-image: url('images/MJT_player.jpg');
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.calendar-player{
+  position: relative;
+  text-align: center;
+  top: 1em;
 }
