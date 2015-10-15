@@ -37,47 +37,47 @@ iframe, object, embed {
 
 /*individual stripes folded below*/
 main .stripe:nth-of-type(1){
-  transition: top 1.12s ease-out, background 4s;
+  transition: top .84s ease-out 0.1s, background 4s;
 }
 
 main .stripe:nth-of-type(2){
   left: 11.11vw;
-  transition: top 1.55s ease-out, background 4s;
+  transition: top 1.16s ease-out 0.1s, background 4s;
 }
 
 main .stripe:nth-of-type(3){
   left: 22.22vw;
-  transition: top 1.4s ease-out, background 4s;
+  transition: top 1.05s ease-out 0.1s, background 4s;
 }
 
 main .stripe:nth-of-type(4){
   left: 33.33vw;
-  transition: top 1.6s ease-out, background 4s;
+  transition: top 1.2s ease-out 0.1s, background 4s;
 }
 
 main .stripe:nth-of-type(5){
   left: 44.44vw;
-  transition: top 1.7s ease-out, background 4s;
+  transition: top 1.55s ease-out 0.1s, background 4s;
 }
 
 main .stripe:nth-of-type(6){
   left: 55.55vw;
-  transition: top 1.5s ease-out, background 4s;
+  transition: top 1.31s ease-out 0.1s, background 4s;
 }
 
 main .stripe:nth-of-type(7){
   left: 66.66vw;
-  transition: top 1.9s ease-out, background 4s;
+  transition: top 1.43s ease-out 0.1s, background 4s;
 }
 
 main .stripe:nth-of-type(8){
   left: 77.77vw;
-  transition: top 1.8s ease-out, background 4s;
+  transition: top 1.35s ease-out 0.1s, background 4s;
 }
 
 main .stripe:nth-of-type(9){
   left: 88.88vw;
-  transition: top 1.75s ease-out, background 4s;
+  transition: top 1.27s ease-out 0.1s, background 4s;
 }
 
 nav{

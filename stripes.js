@@ -42,7 +42,7 @@ $(document).ready((function(){
 
     setTimeout(function(){
       $('.nav-link').css('pointer-events', 'initial');
-    }, 1900);
+    }, 1550);
   };
 
   function moveStripesUp(section){
@@ -58,7 +58,7 @@ $(document).ready((function(){
       setTimeout(function(){ 
         $('.subsection').hide();
         moveStripesUp(section);
-      }, 1900);
+      }, 1550);
     }
   };
 
