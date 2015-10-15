@@ -17,7 +17,7 @@ main {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 iframe, object, embed {
@@ -233,8 +233,8 @@ section.stripes-curtain{
 }
 
 .picture{
-  height: 40%;
-  width: 22%;
+  height: 45%;
+  width: 23%;
   display: inline-block;
   float: left;
   position: relative;
