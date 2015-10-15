@@ -20,6 +20,10 @@ img {
   height: auto;
 }
 
+iframe, object, embed {
+  max-width: 100%;
+}
+
 .stripe{
   width: 11.11vw;
   height: 100vh; 
@@ -89,10 +93,12 @@ nav a{
   text-decoration: none;
   color: white;
   font-size: 2vw;
+  text-shadow: 4px 2px 2px rgba(0, 0, 0, 1);
 }
 
 nav a:hover{
   color: black;
+  text-shadow: 4px 2px 2px rgba(255, 255, 255, 1);
 }
 
 nav a:nth-of-type(1) {
@@ -115,24 +121,9 @@ nav .banner{
 }
 
 /*colors folded below*/
-.raena-color{
-  color: #d63580;
-}
-
-.sandy-color{
-  color: #f0a938;
-}
-
-.rose-color{
-  color: #16d378;
-}
 
 .red{
   background-color: #AF1C08;
-}
-
-.darkred{
-  background-color: #880712;
 }
 
 .orange{
@@ -155,10 +146,6 @@ nav .banner{
   background-color: #078F58;
 }
 
-.dank{
-  background-color: #187B54
-}
-
 .sky{
   background-color: #077A7F;
 }
@@ -167,16 +154,36 @@ nav .banner{
   background-color: #4353B7;
 }
 
-.royalty{
-  background-color: #6F47B3;
-}
-
 .purple{
   background-color: #7F57C3;
 }
 
 .fabulous{
   background-color: #880788;
+}
+
+.royalty{
+  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=6F47B3ff&noise=ffffff&density=10&opacity=8");
+}
+
+.dank{
+  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=187B54ff&noise=ffffff&density=10&opacity=8");
+}
+
+.darkred{
+  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=880712ff&noise=ffffff&density=10&opacity=8");
+}
+
+.raena-color{
+  color: #d63580;
+}
+
+.sandy-color{
+  color: #f0a938;
+}
+
+.rose-color{
+  color: #16d378;
 }
 
 section{
@@ -199,7 +206,7 @@ section.stripes-curtain{
 /*the band*/
 
 .the-band-body{
-  background-color: #FFD4FC;
+  background-color: #FFB2FA;
 }
 
 .the-shows-body{
@@ -218,6 +225,7 @@ section.stripes-curtain{
   top: 5vh;
   margin-left: 10vw;
   z-index: 3;
+  border: 2px solid white;
   border-radius: 10px; 
   -webkit-box-shadow: 9px 15px 9px 3px rgba(0,0,0,0.75);
   -moz-box-shadow: 9px 15px 9px 3px rgba(0,0,0,0.75);
@@ -243,6 +251,7 @@ section.stripes-curtain{
 .band-biography{
   height: 30%;
   width: 79%;
+  background-color: #FFD4FC;
   border: 2px solid white;
   border-radius: 10px;
   left: 7vw;
@@ -258,6 +267,7 @@ section.stripes-curtain{
 .band-biography p{
   margin-top: 0px;
   text-indent: 2vw;
+  color: dodgerblue;
 }
 
 .name{
