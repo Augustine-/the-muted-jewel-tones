@@ -286,5 +286,6 @@ section.stripes-curtain{
 .calendar-player{
   position: relative;
   text-align: center;
-  top: 1em;
+  top: 50%;
+  transform: translateY(-50%);
 }
