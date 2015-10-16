@@ -163,15 +163,27 @@ nav .banner{
 }
 
 .royalty{
-  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=6F47B3ff&noise=ffffff&density=10&opacity=8");
+  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=6F47B3ff&noise=ffffff&density=10&opacity=10");
 }
 
 .dank{
-  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=187B54ff&noise=ffffff&density=10&opacity=8");
+  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=187B54ff&noise=ffffff&density=10&opacity=10");
 }
 
 .darkred{
-  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=880712ff&noise=ffffff&density=10&opacity=8");
+  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=880712ff&noise=ffffff&density=10&opacity=10");
+}
+
+.the-band-body{
+  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=FFC9FB&noise=ffffff&density=10&opacity=35");
+}
+
+.the-shows-body{
+  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=FFD4DC&noise=ffffff&density=10&opacity=35");
+}
+
+.the-music-body{
+  background: url("http://api.thumbr.it/whitenoise-340x370.png?background=8ECC8A&noise=ffffff&density=10&opacity=20");
 }
 
 .raena-color{
@@ -201,20 +213,6 @@ section.stripes-curtain{
   position: absolute;
   z-index: 4;
   pointer-events: none;
-}
-
-/*the band*/
-
-.the-band-body{
-  background-color: #FFB2FA;
-}
-
-.the-shows-body{
-  background-color: #FFD4DC;
-}
-
-.the-music-body{
-  background-color: #E1FFD4;
 }
 
 .subsection-container{
@@ -251,7 +249,7 @@ section.stripes-curtain{
 .band-biography{
   height: 30%;
   width: 79%;
-  background-color: #FFD4FC;
+  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=F7E6F7&noise=ffffff&density=10&opacity=35");
   border: 2px solid white;
   border-radius: 10px;
   left: 7vw;
