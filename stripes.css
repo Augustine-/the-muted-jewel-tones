@@ -272,8 +272,6 @@ section.stripes-curtain{
   font-size: 26px;
 }
 
-/*the shows*/
-
 #mjt-player-iframe{
   background-image: url('images/MJT_player.jpg');
   max-width: 100%;
@@ -286,4 +284,9 @@ section.stripes-curtain{
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.next-show{
+  text-align: center;
+  color: ;
 }
