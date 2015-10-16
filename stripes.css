@@ -288,5 +288,20 @@ section.stripes-curtain{
 
 .next-show{
   text-align: center;
-  color: ;
+  font-size: 1.5em;
+}
+
+#facebook{
+  height: 2.5em;
+  width: 2.5em;
+  display: inline-block;
+  position: absolute;
+  z-index: 6;
+  top: 20%;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+.mail{
+  margin-left: 17vw;
 }
