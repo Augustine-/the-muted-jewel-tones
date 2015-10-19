@@ -9,15 +9,13 @@
     font-style: normal;
 }
 
-
-
 body {
- margin-top: 0px;
- margin-right: 0px;
- margin-bottom: 0px;
- margin-left: 0px;
- height: 100%;
- font-family: 'Open Sans', sans-serif;    
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;    
 }
 
 html{
@@ -313,7 +311,7 @@ section.stripes-curtain{
   position: relative;
 }
 
-#facebook{
+#fb{
   height: 2.5em;
   width: 2.5em;
   display: inline-block;
@@ -323,4 +321,3 @@ section.stripes-curtain{
   border: 2px solid white;
   border-radius: 4px;
 }
-
