@@ -125,6 +125,8 @@ li{
 
 .banner{  
   font-size: 5em;
+  position: relative;
+  margin-top: 3vh;
 }
 
 #mail{
